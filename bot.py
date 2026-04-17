@@ -1,5 +1,5 @@
 
-TOKEN = os.environ.get("8633631861:AAGPNODuoccYDTZFpDcTaC5HOnyLuuo1FQg")async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+TOKEN = os.environ.get("8633631861:AAGPNODuoccYDTZFpDcTaC5HOnyLuuo1FQg")
     await update.message.reply_text("Hello! File bhejo mujhe!")
 
 async def handle_file(update: Update, context: ContextTypes.DEFAULT_TYPE):
