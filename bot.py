@@ -5,6 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 TOKEN = os.environ.get("BOT_TOKEN")
 
 async def start(update, context):
+    await update.message.reply_text("Hello! File bhejo!")
 
 async def handle_file(update, context):
     doc = update.message.document
