@@ -1,9 +1,5 @@
-from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8633631861:AAGPNODuoccYDTZFpDcTaC5HOnyLuuo1FQg"
-
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+TOKEN = os.environ.get("8633631861:AAGPNODuoccYDTZFpDcTaC5HOnyLuuo1FQg")async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hello! File bhejo mujhe!")
 
 async def handle_file(update: Update, context: ContextTypes.DEFAULT_TYPE):
